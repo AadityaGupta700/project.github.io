@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Murthal Parathewala</title>
+    
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/restro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <script>
+      function myFunction() {
+     if (confirm("YOUR BOOKING HAS BEEN CONFIRMED \n FOR FURTHER DETAILS VISIT US ON THE ADDRESS PROVIDED")) {
+       //document.write("THANKYOU FOR BOOKING YOUR CAR");
+       alert("Thank You for Booking Us!!!");
+     } else {
+       //document.write("IF ANY FIELD LEFT EMPTY KINDLY FILL IT");
+     //document.write("\n THANKYOU !!!!!");
+     alert("IF ANY FIELD LEFT EMPTY KINDLY FILL IT \n Thank You");
+     }
+     //location.reload();
+   }
+     </script>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image">
+              <img src="Images\stock-vector-mpw-letter-original-monogram-logo-design-1808974489.jpg" alt="logo" width="130px" height="60px">
+           
+            </div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Murthal Parathewala</h1></a>
+            <p>The Taste Of Delhi</p>
+          
+            
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" 
+          data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <i class="fa fa-cutlery"></i><br class="hidden-xs"> Menu</a>
+            </li>
+            
+            <li>
+              <a href="#">
+                <i class="fa fa-info-circle" style="font-size: 19px;"><br class="hidden-xs"> About</i></a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-star"  ></i><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs" style="text-align:right ;">
+              <a href="tel:8218645901">
+                <span>8218645901</span></a><div>* We Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+        <div id="call-btn" class="visible-xs">
+          <a class="btn" href="tel:8218645901">
+          <span class="fa fa-solid fa-headphones"></span>
+          8218645901
+          </a>
+        </div>
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  
+
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/small.webp" alt="Picture of restaurant" 
+      class="img-responsive visible-xs">
+     
+    </div>
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://goo.gl/maps/mWqLHuJ9UYsKuRgc8" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d430.5390377522808!2d78.0460069!3d30.3136335!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1670941458402!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>map</span>
+          </div>
+        </a>
+      </div>
+    </div><!-- End of #home-tiles -->
+    <div class="reserve">   <p class="res">For Reservation</p>
+      <form action="reserve.php" method="post">
+    <div>
+      <h2 id="content"></h2>
+    <input  type="text" required class="form-control con" id="one" name="fname" aria-describedby="nameHelp" placeholder="Enter your name" required>
+  </div>
+ 
+  <div>  <input type="number" required id="three" class="form-control" name="phno" placeholder="Enter your phone number" required> </div>
+<div>
+  <input type="number" required id="four" class="form-control" placeholder="No. of Seats" name="nos" required >
+</div>
+<div>
+  <input type="datetime" required id="five" class="form-control" placeholder="Enter Date & Time" name="dandt" required>
+</div>
+<button  onclick="myFunction()" type="submit" class="btn btn-primary">Submit</button>
+
+</div>
+</form>
+  </div><!-- End of #main-content -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Fri: 11:15am - 12:00pm<br>
+          Sat-Sun: 11:15am - 12:30pm<br>
+          
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          51/B haridwar Road<br>
+          Race course,Dehradun,248001
+          <p>* Delivery area within 3-4 KM, with minimum order of Rs500 plus Rs 50 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Desi restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Murthal Parathawala 2022</div>
+    </div>
+  </footer>
+
+  
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script> 
+    <script src="js/script.js"></script>
+</body>
+</html>
